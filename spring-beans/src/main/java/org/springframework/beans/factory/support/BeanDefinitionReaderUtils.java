@@ -142,6 +142,7 @@ public abstract class BeanDefinitionReaderUtils {
 
 		// Increase counter until the id is unique.
 		String prefix = beanName + GENERATED_BEAN_NAME_SEPARATOR;
+		// registry.containsBeanDefinition 判断id 是否已经被注册,被注册会 +1
 		while (counter == -1 || registry.containsBeanDefinition(id)) {
 			counter++;
 			id = prefix + counter;

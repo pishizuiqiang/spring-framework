@@ -24,7 +24,7 @@ dependencies {
 	optional("jakarta.xml.bind:jakarta.xml.bind-api")
 	optional("jakarta.websocket:jakarta.websocket-api")
 	optional("jakarta.websocket:jakarta.websocket-client-api")
-	optional("junit:junit")
+	optional('junit:junit:4.13.2')
 	optional("org.apache.tomcat.embed:tomcat-embed-core")
 	optional("org.junit.platform:junit-platform-launcher")  // for AOT processing
 	optional("org.junit.jupiter:junit-jupiter-api")

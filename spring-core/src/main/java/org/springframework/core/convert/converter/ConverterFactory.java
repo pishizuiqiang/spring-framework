@@ -32,6 +32,8 @@ public interface ConverterFactory<S, R> {
 
 	/**
 	 * Get the converter to convert from S to target type T, where T is also an instance of R.
+	 * 根据入参 的类型,生成 T ==> R 的转换器
+	 * ConverterFactory 只生成(获取)转换器
 	 * @param <T> the target type
 	 * @param targetType the target type to convert to
 	 * @return a converter from S to T
